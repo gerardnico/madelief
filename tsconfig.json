@@ -1,0 +1,29 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "dist"
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": [
+      "@combostrap/interact/types"
+    ],
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ]
+  }
+}

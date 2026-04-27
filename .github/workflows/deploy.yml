@@ -1,0 +1,120 @@
+name: Deploy Website with Interact
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Ref to checkout (tag: vx.x.x or early-access, or branch name)'
+        required: true
+        type: string
+        default: 'main'
+
+  # Trigger on tag push
+  push:
+    # A tag is a commit name (as a branch)
+    # We can't filter by default if a branch contains a tag
+    tags:
+      - 'v*'
+      - 'early-access'
+
+
+# Allow only one concurrent deployment
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+env:
+  APP_DIR: .
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.ref_name }}
+          fetch-depth: 0
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      # Runs a single command using the runners shell
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'yarn'  # caches yarn dependencies automatically
+
+      # Typst
+      # https://github.com/typst/typst/releases/tag/v0.14.2
+      - name: Install Typst 0.14.2
+        run: |
+          curl -LO https://github.com/typst/typst/releases/download/v0.14.2/typst-x86_64-unknown-linux-musl.tar.xz
+          tar -xf typst-x86_64-unknown-linux-musl.tar.xz
+          sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
+          typst --version
+
+      # We use task as task runner
+      # https://taskfile.dev/docs/installation#npm
+      - name: Install Task
+        run: |
+          npm install -g @go-task/cli
+
+      # Change local resolution to fetch
+      - name: Change resolution
+        # We can't set an exec resolution.
+        # The below command:
+        # yarn set resolution "@combostrap/interact@portal:../../combostrap/interact::locator=gerardnico%40workspace%3A." "exec:./contrib/scripts/interact-fetch-build.js"
+        # is failling with: Assertion failed: The descriptor should have been bound
+        run: |
+          sed -i 's|portal:../../combostrap/interact|exec:./contrib/scripts/interact-fetch-build.js|g' package.json
+          # fighting the yarn cache
+          DATETIME="$(date '+%Y-%m-%d %H:%M:%S')"
+          sed -i "1s/.*/\/\/ Fighting yarn cache date: $DATETIME/" ./contrib/scripts/interact-fetch-build.js
+
+      # equivalent to npm ci
+      # --immutable does not work well with the exec because the checksum of the interact archive is modified when
+      # the branch code is modified
+      # https://yarnpkg.com/advanced/error-codes#yn0018---cache_checksum_mismatch
+      - name: Install dependencies from the lockfile
+        run: |
+          # We can't make the installation immutable due to the exec above
+          YARN_CHECKSUM_BEHAVIOR=ignore YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install
+
+      - name: Build the website
+        run: |
+          yarn build
+
+      # actions/deploy-pages expect a zip
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ env.APP_DIR }}/dist/client
+
+  # https://github.com/actions/deploy-pages
+  deploy:
+    needs: build
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    runs-on: ubuntu-latest
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

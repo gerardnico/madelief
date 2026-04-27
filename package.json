@@ -1,0 +1,24 @@
+{
+  "name": "gerardnico",
+  "type": "module",
+  "version": "0.0.1",
+  "dependencies": {
+    "@combostrap/interact": "0.1.0-next"
+  },
+  "scripts": {
+    "start": "interact start",
+    "build": "task pdf && interact favicon && interact build",
+    "schema": "yarn tsx src/resources/resume/data/resume-schema-generation.ts"
+  },
+  "resolutions": {
+    "@combostrap/interact": "portal:../../combostrap/interact"
+  },
+  "packageManager": "yarn@4.12.0",
+  "devDependencies": {
+    "@types/node": "25.5.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3"
+  }
+}

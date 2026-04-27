@@ -1,0 +1,6 @@
+@import "@combostrap/interact/global.css";
+
+/* Pages */
+@source "../pages";
+/* Components */
+@source "../components";
