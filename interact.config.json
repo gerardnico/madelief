@@ -1,5 +1,9 @@
 {
   "$schema": ".interact/interact.schema.json",
+  "site": {
+    "base": "/madelief",
+    "name": "Madelief"
+  },
   "template": {
     "header": {
       "logoSrc": "logo.png"
