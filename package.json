@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "interact start",
-    "build": "task pdf && interact favicon && interact build",
+    "build": "interact build",
     "schema": "yarn tsx src/resources/resume/data/resume-schema-generation.ts"
   },
   "resolutions": {
