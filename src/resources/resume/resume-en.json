@@ -1,0 +1,165 @@
+{
+  "$schema": "./schema.json",
+  "basics": {
+    "name": "Madelief Gerard",
+    "image": "",
+    "email": "madelief.gerard@icloud.com",
+    "phone": "+31 6 34 88 15 48",
+    "url": "https://tools.gerardnico.com/madelief/",
+    "location": {
+      "city": "Oegstgeest",
+      "countryCode": "NL",
+      "region": "Randstad"
+    },
+    "profiles": [
+    ]
+  },
+  "profiles": {
+    "designer": {
+      "title": "Designer",
+      "lead": "Deploy quickly with confidence and delight your users",
+      "description": "My name in Madelief Gerard and I am 20 years old. I live in Delft where I study. I am currently studying Industrial Design Engineering at the TU university of Delft, and am now in my 2nd year where I am also following the honours program. I define myself as a motivated, energetic, and determined person who wants to do their work well. I really enjoy learning new things and talking to people.",
+      "tags": [
+        "designer"
+      ]
+    }
+  },
+  "characteristics": {
+  },
+  "creations": {
+    "pohidex": {
+      "title": "Pohidex",
+      "description": "De robot voor een gezond veld",
+      "image": "pohidex.png"
+    },
+    "datacadamia": {
+      "title": "Kneed",
+      "description": "Ondersteuning wanneer je die nodig heb",
+      "image": "kneed.png"
+    }
+  },
+  "advanced_skills": {},
+  "education": {
+    "2018-davinci": {
+      "studyType": "High School",
+      "area": "Pre-university education (VWO)",
+      "institution": "Da Vinci College, Leiden",
+      "url": "https://www.davinci-leiden.nl/",
+      "startDate": "2018-09-01",
+      "endDate": "2024-06-31",
+      "location": {
+        "city": "Leiden",
+        "countryCode": "Nl"
+      }
+    },
+    "2024-delft": {
+      "studyType": "Bachelor",
+      "area": "Industrial Design",
+      "institution": "Delft University of Technology, Delft",
+      "url": "https://www.tudelft.nl/en/ide",
+      "location": {
+        "city": "Delft",
+        "countryCode": "Nl"
+      },
+      "startDate": "1994-09-01"
+    },
+    "2025-delft": {
+      "studyType": "Bachelor",
+      "area": "Honours programme",
+      "institution": "Delft University of Technology, Delft",
+      "url": "https://www.tudelft.nl/en/ide",
+      "location": {
+        "city": "Delft",
+        "countryCode": "Nl"
+      },
+      "startDate": "2025-09-01"
+    }
+  },
+  "skills": {
+  },
+  "languages": {
+    "dutch": {
+      "language": "Dutch",
+      "fluency": "Native speaker"
+    },
+    "english": {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    "spanish": {
+      "language": "Spanish"
+    },
+    "french": {
+      "language": "French",
+      "fluency": "Native speaker"
+    }
+  },
+  "interests": [
+    {
+      "name": "General",
+      "keywords": [
+        "Singing",
+        "Languages",
+        "cultures discovery",
+        "Drawing/painting",
+        "Skating",
+        "Tennis"
+      ]
+    }
+  ],
+  "certificates": {
+  },
+  "work": {
+    "2019-delft": {
+      "name": "Delft",
+      "market": "Association",
+      "startDate": "2024-09-01",
+      "position": "Active in student life",
+      "highlights": [
+        {
+          "highlight": "Mentors: Girlsday, EJW, and Owee"
+        },
+        {
+          "highlight": "I've worked at open days and am active in ID study association"
+        },
+        {
+          "highlight": "Member of tennis club Obvius and skating club ELS where I also compete"
+        }
+      ]
+    },
+    "2022-albert-heijn": {
+      "name": "Albert Heijn",
+      "url": "https://www.ah.nl/",
+      "market": "Supermarket",
+      "startDate": "2022-07-01",
+      "endDate": "2024-05-01",
+      "position": "Store employee"
+    },
+    "2024-tjoe-tjoe": {
+      "name": "Tjoe Tjoe",
+      "url": "https://www.instagram.com/tsjoe.tsjoe.chill/",
+      "market": "Food Restauration",
+      "startDate": "2024-06-01",
+      "endDate": "2024-10-01",
+      "position": "Catering employee",
+      "summary": "Sales of coffee, bread, and ice cream"
+    },
+    "2024-ssl": {
+      "name": "SSL",
+      "market": "Teaching and Education",
+      "url": "https://www.sslleiden.nl/",
+      "startDate": "2024-10-01",
+      "endDate": "2025-03-01",
+      "position": "Tutor",
+      "summary": "I have been a teaching assistant and have completed a training program for this"
+    },
+    "2025-soldier-orange": {
+      "name": "Soldier of Orange - Verwiel en Wijngaart",
+      "market": "Theater/Musical",
+      "startDate": "2025-05-01",
+      "url": "https://www.soldaatvanoranje.nl/",
+      "position": "Theater employee",
+      "summary": "I assist with tasks around the theater, such as at the bar, the\nentrance, and in the restaurant."
+    }
+  }
+}
