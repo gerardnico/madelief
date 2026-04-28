@@ -183,33 +183,6 @@
   "certificates": {
   },
   "work": {
-    "2019-delft": {
-      "name": "Delft",
-      "market": "Association",
-      "startDate": "2024-09-01",
-      "position": "Active in student life",
-      "highlights": [
-        {
-          "highlight": "Mentored prospective students in 3 orientation initiatives: Girlsday, EJW, and OWee.",
-          "tags": [
-            "collaboration-and-leadership",
-            "international-and-multicultural"
-          ]
-        },
-        {
-          "highlight": "Supported TU Delft open days and remained active in the Industrial Design study association to strengthen student community engagement.",
-          "tags": [
-            "collaboration-and-leadership"
-          ]
-        },
-        {
-          "highlight": "Compete in university skating activities and participate in sports communities, reinforcing consistency, teamwork, and discipline.",
-          "tags": [
-            "collaboration-and-leadership"
-          ]
-        }
-      ]
-    },
     "2022-albert-heijn": {
       "name": "Albert Heijn",
       "url": "https://www.ah.nl/",
@@ -226,24 +199,6 @@
       "endDate": "2024-10-01",
       "position": "Catering employee",
       "summary": "Sales of coffee, bread, and ice cream"
-    },
-    "2024-ssl": {
-      "name": "SSL",
-      "market": "Teaching and Education",
-      "url": "https://www.sslleiden.nl/",
-      "startDate": "2024-10-01",
-      "endDate": "2025-03-01",
-      "position": "Tutor",
-      "summary": "Delivered tutoring support after completing a dedicated training program, helping secondary students structure learning and improve performance.",
-      "highlights": [
-        {
-          "highlight": "Adapted explanations to individual learning needs and maintained clear progression follow-up for students.",
-          "tags": [
-            "collaboration-and-leadership",
-            "critical-and-experimental"
-          ]
-        }
-      ]
     },
     "2025-soldier-orange": {
       "name": "Soldier of Orange - Verwiel en Wijngaart",
@@ -369,10 +324,25 @@
           "highlight": "Contributed to 3 structured orientation initiatives (Girlsday, EJW, OWee), supporting student onboarding."
         },
         {
+          "highlight": "Mentored prospective students in 3 orientation initiatives: Girlsday, EJW, and OWee."
+        },
+        {
           "highlight": "Supported open days and association activities to strengthen academic community engagement."
         },
         {
           "highlight": "Demonstrated initiative, communication, and team coordination."
+        },
+        {
+          "highlight": "Supported TU Delft open days and remained active in the Industrial Design study association to strengthen student community engagement.",
+          "tags": [
+            "collaboration-and-leadership"
+          ]
+        },
+        {
+          "highlight": "Compete in university skating activities and participate in sports communities, reinforcing consistency, teamwork, and discipline.",
+          "tags": [
+            "collaboration-and-leadership"
+          ]
         }
       ]
     },
@@ -389,7 +359,18 @@
       "type": "teaching",
       "entity": "SSL Leiden",
       "entityMarket": "Education",
+      "market": "Teaching and Education",
+      "url": "https://www.sslleiden.nl/",
+      "position": "Tutor",
+      "summary": "Delivered tutoring support after completing a dedicated training program, helping secondary students structure learning and improve performance.",
       "highlights": [
+        {
+          "highlight": "Adapted explanations to individual learning needs and maintained clear progression follow-up for students.",
+          "tags": [
+            "collaboration-and-leadership",
+            "critical-and-experimental"
+          ]
+        },
         {
           "highlight": "Delivered one-to-one tutoring after completing a formal training programme."
         },

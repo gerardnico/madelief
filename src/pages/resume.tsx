@@ -1,14 +1,64 @@
 import React from "react";
 import Image from "@combostrap/interact/components/Image";
 import resume from "../resources/resume/resume-data";
+import Grid from "@combostrap/interact/components/Grid";
+import GridCell from "@combostrap/interact/components/GridCell";
+import {Frontmatter} from "@combostrap/interact/types";
 
 // noinspection JSUnusedGlobalSymbols
-export const frontmatter = {
-    layout: "hamburger",
+export const frontmatter: Frontmatter = {
+    layout: "holy-prose",
     title: "Resume",
+    hero: false
 }
 
 const themeColor = "#00489C";
+
+// noinspection JSUnusedGlobalSymbols - used dynamically
+let profileId = "profile-id";
+let characteristicsId = "char-id";
+let projectsId = "projects-id";
+let educationId = "edu-id";
+let workId = "work-id";
+let skillId = "skill-id";
+let languagesInterestId = "lang-inter-id";
+export const toc: TocNode[] = [
+    {
+        value: "Profile",
+        depth: 1,
+        id: profileId
+    },
+    {
+        value: "Characteristics",
+        depth: 1,
+        id: characteristicsId
+    },
+    {
+        value: "Projects",
+        depth: 1,
+        id: projectsId
+    },
+    {
+        value: "Work Experience",
+        depth: 1,
+        id: workId
+    },
+    {
+        value: "Education",
+        depth: 1,
+        id: educationId
+    },
+    {
+        value: "Skills",
+        depth: 1,
+        id: skillId
+    },
+    {
+        value: "Languages and Interests",
+        depth: 1,
+        id: languagesInterestId
+    }
+]
 
 function formatDate(value?: string): string | null {
     if (!value) {
@@ -30,6 +80,7 @@ function formatDateRange(startDate?: string, endDate?: string): string {
     return `${start ?? ""}${start ? " - " : ""}${end ?? ""}`;
 }
 
+// noinspection JSUnusedGlobalSymbols
 export default function Resume() {
     const profile = Object.values(resume.profiles ?? {})[0];
     const characteristics = Object.values(resume.characteristics ?? {});
@@ -53,7 +104,7 @@ export default function Resume() {
         });
 
     return (
-        <main className={"mx-auto max-w-4xl px-6 py-10"}>
+        <>
             <header className={"mb-8 border-b pb-6"}>
                 <h1 className={"text-4xl font-bold"} style={{color: themeColor}}>
                     {resume.basics.name}
@@ -72,29 +123,28 @@ export default function Resume() {
                 </div>
             </header>
 
-            {profile?.description && (
-                <section className={"mb-8"}>
-                    <h2 className={"mb-2 text-2xl font-semibold"} style={{color: themeColor}}>Profile</h2>
-                    <p>{profile.description}</p>
-                </section>
-            )}
+            <section className={"mb-8"} id={profileId}>
+                <h2 className={"mb-2 text-2xl font-semibold"} style={{color: themeColor}}>Profile</h2>
+                <p>{profile.description}</p>
+            </section>
 
-            {characteristics.length > 0 && (
-                <section className={"mb-8"}>
-                    <h2 className={"mb-3 text-2xl font-semibold"} style={{color: themeColor}}>Characteristics</h2>
-                    <div className={"grid gap-3 md:grid-cols-2"}>
-                        {characteristics.map((item) => (
-                            <article key={item.title} className={"rounded border p-4"}>
+
+            <section className={"mb-8"} id={characteristicsId}>
+                <h2 className={"mb-3 text-2xl font-semibold"} style={{color: themeColor}}>Characteristics</h2>
+                <Grid className={"cells-gap-10"}>
+                    {characteristics.map((item, index) => (
+                        <GridCell key={index}>
+                            <div className={"rounded border p-4 w-60"}>
                                 <h3 className={"font-semibold"}>{item.title}</h3>
                                 {item.description && <p className={"mt-1 text-sm"}>{item.description}</p>}
-                            </article>
-                        ))}
-                    </div>
-                </section>
-            )}
+                            </div>
+                        </GridCell>
+                    ))}
+                </Grid>
+            </section>
 
             {projects.length > 0 && (
-                <section className={"mb-8"}>
+                <section className={"mb-8"} id={projectsId}>
                     <h2 className={"mb-3 text-2xl font-semibold"} style={{color: themeColor}}>Projects</h2>
                     <div className={"space-y-4"}>
                         {projects.map((project) => (
@@ -103,7 +153,7 @@ export default function Resume() {
                                 {project.description && <p className={"mt-1"}>{project.description}</p>}
                                 {project.image && (
                                     <div className={"mt-3 max-w-sm"}>
-                                        <Image src={project.image} alt={project.description} />
+                                        <Image src={project.image} alt={project.description}/>
                                     </div>
                                 )}
                                 {project.notes && project.notes.length > 0 && (
@@ -127,38 +177,30 @@ export default function Resume() {
             )}
 
             {workEntries.length > 0 && (
-                <section className={"mb-8"}>
+                <section className={"mb-8"} id={workId}>
                     <h2 className={"mb-3 text-2xl font-semibold"} style={{color: themeColor}}>Work Experience</h2>
                     <div className={"space-y-4"}>
-                        {workEntries.map((work) => (
-                            <article key={`${work.name}-${work.startDate}`} className={"rounded border p-4"}>
-                                <div className={"flex flex-wrap items-baseline justify-between gap-2"}>
-                                    <h3 className={"font-semibold"}>{work.position} {work.name ? `- ${work.name}` : ""}</h3>
-                                    <span className={"text-sm"}>{formatDateRange(work.startDate, work.endDate)}</span>
-                                </div>
-                                {work.summary && <p className={"mt-1"}>{work.summary}</p>}
-                                {work.highlights && work.highlights.length > 0 && (
-                                    <ul className={"mt-2 list-disc pl-5 text-sm"}>
-                                        {work.highlights.map((highlight) => (
-                                            <li key={highlight.highlight}>{highlight.highlight}</li>
-                                        ))}
-                                    </ul>
-                                )}
-                            </article>
+                        {workEntries.map((work, index) => (
+                            <p key={index}>
+                                {formatDateRange(work.startDate, work.endDate)} - <span
+                                className={"font-semibold"}>{work.position}</span> - <a href={work.url}>{work.name}</a>
+                            </p>
                         ))}
                     </div>
                 </section>
             )}
 
             {educationEntries.length > 0 && (
-                <section className={"mb-8"}>
+                <section className={"mb-8"} id={educationId}>
                     <h2 className={"mb-3 text-2xl font-semibold"} style={{color: themeColor}}>Education</h2>
                     <div className={"space-y-4"}>
                         {educationEntries.map((education) => (
-                            <article key={`${education.institution}-${education.startDate}`} className={"rounded border p-4"}>
+                            <article key={`${education.institution}-${education.startDate}`}
+                                     className={"rounded border p-4"}>
                                 <div className={"flex flex-wrap items-baseline justify-between gap-2"}>
                                     <h3 className={"font-semibold"}>{education.studyType} {education.area ? `- ${education.area}` : ""}</h3>
-                                    <span className={"text-sm"}>{formatDateRange(education.startDate, education.endDate)}</span>
+                                    <span
+                                        className={"text-sm"}>{formatDateRange(education.startDate, education.endDate)}</span>
                                 </div>
                                 {education.institution && <p className={"text-sm"}>{education.institution}</p>}
                                 {education.notes && <p className={"mt-1 text-sm"}>{education.notes}</p>}
@@ -169,7 +211,7 @@ export default function Resume() {
             )}
 
             {skillCategories.length > 0 && (
-                <section className={"mb-8"}>
+                <section className={"mb-8"} id={skillId}>
                     <h2 className={"mb-3 text-2xl font-semibold"} style={{color: themeColor}}>Skills</h2>
                     <div className={"grid gap-3 md:grid-cols-2"}>
                         {skillCategories.map(([id, skill]) => (
@@ -188,7 +230,7 @@ export default function Resume() {
             )}
 
             {(languageEntries.length > 0 || interestEntries.length > 0) && (
-                <section className={"mb-2"}>
+                <section className={"mb-2"} id={languagesInterestId}>
                     <h2 className={"mb-3 text-2xl font-semibold"} style={{color: themeColor}}>Languages & Interests</h2>
                     {languageEntries.length > 0 && (
                         <p>
@@ -204,6 +246,6 @@ export default function Resume() {
                     )}
                 </section>
             )}
-        </main>
+        </>
     )
 }
