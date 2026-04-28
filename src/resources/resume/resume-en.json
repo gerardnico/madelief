@@ -16,15 +16,62 @@
   },
   "profiles": {
     "designer": {
-      "title": "Designer",
-      "lead": "Deploy quickly with confidence and delight your users",
-      "description": "My name in Madelief Gerard and I am 20 years old. I live in Delft where I study. I am currently studying Industrial Design Engineering at the TU university of Delft, and am now in my 2nd year where I am also following the honours program. I define myself as a motivated, energetic, and determined person who wants to do their work well. I really enjoy learning new things and talking to people.",
+      "title": "Hybrid Designer and Engineer",
+      "lead": "Industrial Design Engineering student connecting human-centered design with technical execution",
+      "description": "Industrial Design Engineering student at TU Delft (Honours track) with a strong interest in interdisciplinary and impact-driven projects. I work at the intersection of design research, prototyping, and implementation to translate complex challenges into tangible solutions. I value critical thinking, experimentation, and collaboration across cultures and disciplines.",
       "tags": [
-        "designer"
+        "designer",
+        "hybrid-design-engineering",
+        "impact-and-sustainability",
+        "critical-and-experimental",
+        "collaboration-and-leadership",
+        "international-and-multicultural"
       ]
     }
   },
   "characteristics": {
+    "hybrid-design-engineering": {
+      "title": "Design + Engineering Integration",
+      "description": "I connect design research, concept development, and technical prototyping to move from idea to implementable solution.",
+      "tags": [
+        "hybrid-design-engineering"
+      ]
+    },
+    "impact-and-sustainability": {
+      "title": "Impact on People and Planet",
+      "description": "I prioritize solutions that improve user well-being while considering environmental and social implications.",
+      "tags": [
+        "impact-and-sustainability"
+      ]
+    },
+    "critical-and-experimental": {
+      "title": "Critical and Experimental Mindset",
+      "description": "I question assumptions, test alternatives, and iterate through evidence-based experimentation.",
+      "tags": [
+        "critical-and-experimental"
+      ]
+    },
+    "innovation-and-technology": {
+      "title": "Innovation Through Technology",
+      "description": "I use digital and physical prototyping tools to explore novel concepts and bring ideas into practice.",
+      "tags": [
+        "innovation-and-technology"
+      ]
+    },
+    "collaboration-and-leadership": {
+      "title": "Collaborative Project Work",
+      "description": "I contribute in multidisciplinary teams and take initiative in educational and community contexts.",
+      "tags": [
+        "collaboration-and-leadership"
+      ]
+    },
+    "international-and-multicultural": {
+      "title": "International and Multicultural Openness",
+      "description": "I thrive in diverse environments and communicate across languages and cultures.",
+      "tags": [
+        "international-and-multicultural"
+      ]
+    }
   },
   "creations": {
     "pohidex": {
@@ -61,7 +108,7 @@
         "city": "Delft",
         "countryCode": "Nl"
       },
-      "startDate": "1994-09-01"
+      "startDate": "2024-09-01"
     },
     "2025-delft": {
       "studyType": "Bachelor",
@@ -76,6 +123,60 @@
     }
   },
   "skills": {
+    "design-research": {
+      "name": "Design research",
+      "level": 4,
+      "type": "category",
+      "description": "User research, framing, and concept validation."
+    },
+    "engineering-prototyping": {
+      "name": "Engineering and prototyping",
+      "level": 4,
+      "type": "category",
+      "description": "From concept to physical or digital prototype."
+    },
+    "collaboration-leadership": {
+      "name": "Collaboration and leadership",
+      "level": 4,
+      "type": "category",
+      "description": "Team contribution, mentoring, and initiative."
+    },
+    "sustainability-ethics": {
+      "name": "Sustainability and ethics",
+      "level": 3,
+      "type": "category",
+      "description": "Responsible design decisions for societal impact."
+    },
+    "concept-development": {
+      "name": "Concept development",
+      "level": 4,
+      "parentId": "design-research",
+      "type": "technology"
+    },
+    "cad-modeling": {
+      "name": "CAD modeling",
+      "level": 3,
+      "parentId": "engineering-prototyping",
+      "type": "technology"
+    },
+    "prototype-testing": {
+      "name": "Prototype testing",
+      "level": 3,
+      "parentId": "engineering-prototyping",
+      "type": "technology"
+    },
+    "team-facilitation": {
+      "name": "Team facilitation",
+      "level": 3,
+      "parentId": "collaboration-leadership",
+      "type": "technology"
+    },
+    "cross-cultural-communication": {
+      "name": "Cross-cultural communication",
+      "level": 4,
+      "parentId": "collaboration-leadership",
+      "type": "technology"
+    }
   },
   "languages": {
     "dutch": {
@@ -87,7 +188,8 @@
       "fluency": "Fluent"
     },
     "spanish": {
-      "language": "Spanish"
+      "language": "Spanish",
+      "fluency": "Working knowledge"
     },
     "french": {
       "language": "French",
@@ -117,13 +219,23 @@
       "position": "Active in student life",
       "highlights": [
         {
-          "highlight": "Mentors: Girlsday, EJW, and Owee"
+          "highlight": "Mentored prospective students in 3 orientation initiatives: Girlsday, EJW, and OWee.",
+          "tags": [
+            "collaboration-and-leadership",
+            "international-and-multicultural"
+          ]
         },
         {
-          "highlight": "I've worked at open days and am active in ID study association"
+          "highlight": "Supported TU Delft open days and remained active in the Industrial Design study association to strengthen student community engagement.",
+          "tags": [
+            "collaboration-and-leadership"
+          ]
         },
         {
-          "highlight": "Member of tennis club Obvius and skating club ELS where I also compete"
+          "highlight": "Compete in university skating activities and participate in sports communities, reinforcing consistency, teamwork, and discipline.",
+          "tags": [
+            "collaboration-and-leadership"
+          ]
         }
       ]
     },
@@ -151,7 +263,16 @@
       "startDate": "2024-10-01",
       "endDate": "2025-03-01",
       "position": "Tutor",
-      "summary": "I have been a teaching assistant and have completed a training program for this"
+      "summary": "Delivered tutoring support after completing a dedicated training program, helping secondary students structure learning and improve performance.",
+      "highlights": [
+        {
+          "highlight": "Adapted explanations to individual learning needs and maintained clear progression follow-up for students.",
+          "tags": [
+            "collaboration-and-leadership",
+            "critical-and-experimental"
+          ]
+        }
+      ]
     },
     "2025-soldier-orange": {
       "name": "Soldier of Orange - Verwiel en Wijngaart",
@@ -160,6 +281,132 @@
       "url": "https://www.soldaatvanoranje.nl/",
       "position": "Theater employee",
       "summary": "I assist with tasks around the theater, such as at the bar, the\nentrance, and in the restaurant."
+    }
+  },
+  "projects": {
+    "tudelft-industrial-design-foundation": {
+      "name": "TU Delft Industrial Design Foundation Projects",
+      "description": "Course-based projects combining design methodology with technical feasibility.",
+      "startDate": "2024-09-01",
+      "roles": [
+        "Industrial Design Engineering student",
+        "Team project contributor"
+      ],
+      "type": "academic",
+      "entity": "TU Delft",
+      "entityMarket": "Education",
+      "keywords": [
+        "Design research",
+        "Concept development",
+        "Prototyping",
+        "Iteration"
+      ],
+      "highlights": [
+        {
+          "highlight": "Translated user insights into concept directions and prototype decisions in multidisciplinary project settings.",
+          "tags": [
+            "hybrid-design-engineering",
+            "critical-and-experimental"
+          ]
+        },
+        {
+          "highlight": "Balanced desirability, feasibility, and implementation constraints during project development.",
+          "tags": [
+            "hybrid-design-engineering",
+            "impact-and-sustainability"
+          ]
+        }
+      ]
+    },
+    "pohidex-robot-concept": {
+      "name": "Pohidex - Robot for Healthy Fields",
+      "description": "Agricultural robotics concept focused on healthier field maintenance.",
+      "roles": [
+        "Concept developer",
+        "Prototype contributor"
+      ],
+      "type": "application",
+      "keywords": [
+        "Agritech",
+        "Sustainability",
+        "Product design",
+        "Engineering"
+      ],
+      "highlights": [
+        {
+          "highlight": "Developed a concept at the intersection of product design and technical systems for agricultural contexts.",
+          "tags": [
+            "hybrid-design-engineering",
+            "impact-and-sustainability",
+            "innovation-and-technology"
+          ]
+        }
+      ]
+    },
+    "kneed-support-concept": {
+      "name": "Kneed - Support When Needed",
+      "description": "Support-oriented design concept aimed at improving daily assistance experiences.",
+      "roles": [
+        "Designer",
+        "User-centered concept developer"
+      ],
+      "type": "application",
+      "keywords": [
+        "Inclusive design",
+        "Human-centered design",
+        "Prototype"
+      ],
+      "highlights": [
+        {
+          "highlight": "Designed an assistance concept informed by user needs and translated insights into concrete solution directions.",
+          "tags": [
+            "impact-and-sustainability",
+            "critical-and-experimental"
+          ]
+        }
+      ]
+    },
+    "tudelft-community-mentoring": {
+      "name": "TU Delft Mentoring and Study Community",
+      "description": "Student-facing mentoring, onboarding, and association engagement activities.",
+      "startDate": "2024-09-01",
+      "roles": [
+        "Mentor",
+        "Community contributor"
+      ],
+      "type": "volunteering",
+      "entity": "TU Delft",
+      "entityMarket": "Education",
+      "highlights": [
+        {
+          "highlight": "Contributed to 3 structured orientation initiatives (Girlsday, EJW, OWee), supporting transition into student life.",
+          "tags": [
+            "collaboration-and-leadership",
+            "international-and-multicultural"
+          ]
+        }
+      ]
+    },
+    "ssl-learning-support": {
+      "name": "SSL Tutoring and Learning Support",
+      "description": "Tutoring role focused on effective explanation and personalized student support.",
+      "startDate": "2024-10-01",
+      "endDate": "2025-03-01",
+      "roles": [
+        "Tutor"
+      ],
+      "type": "teaching",
+      "entity": "SSL Leiden",
+      "entityMarket": "Education",
+      "highlights": [
+        {
+          "highlight": "Applied trained tutoring methods to improve structure, confidence, and comprehension in one-to-one learning sessions.",
+          "tags": [
+            "collaboration-and-leadership",
+            "critical-and-experimental"
+          ]
+        }
+      ]
     }
   }
 }
