@@ -73,18 +73,6 @@
       ]
     }
   },
-  "creations": {
-    "pohidex": {
-      "title": "Pohidex",
-      "description": "De robot voor een gezond veld",
-      "image": "pohidex.png"
-    },
-    "datacadamia": {
-      "title": "Kneed",
-      "description": "Ondersteuning wanneer je die nodig heb",
-      "image": "kneed.png"
-    }
-  },
   "advanced_skills": {},
   "education": {
     "2018-davinci": {
@@ -101,7 +89,7 @@
     },
     "2024-delft": {
       "studyType": "Bachelor",
-      "area": "Industrial Design",
+      "area": "Industrial Design Engineering",
       "institution": "Delft University of Technology, Delft",
       "url": "https://www.tudelft.nl/en/ide",
       "location": {
@@ -112,7 +100,8 @@
     },
     "2025-delft": {
       "studyType": "Bachelor",
-      "area": "Honours programme",
+      "area": "TU Delft Honours Programme",
+      "notes": "Additional honours track",
       "institution": "Delft University of Technology, Delft",
       "url": "https://www.tudelft.nl/en/ide",
       "location": {
@@ -124,46 +113,28 @@
   },
   "skills": {
     "design-research": {
-      "name": "Design research",
+      "name": "Design research and concept development",
       "level": 4,
       "type": "category",
       "description": "User research, framing, and concept validation."
     },
     "engineering-prototyping": {
-      "name": "Engineering and prototyping",
+      "name": "Engineering and prototyping (including CAD modeling and prototype testing)",
       "level": 4,
       "type": "category",
       "description": "From concept to physical or digital prototype."
     },
     "collaboration-leadership": {
-      "name": "Collaboration and leadership",
+      "name": "Collaboration and project leadership",
       "level": 4,
       "type": "category",
       "description": "Team contribution, mentoring, and initiative."
     },
     "sustainability-ethics": {
-      "name": "Sustainability and ethics",
+      "name": "Sustainability and ethical decision-making",
       "level": 3,
       "type": "category",
       "description": "Responsible design decisions for societal impact."
-    },
-    "concept-development": {
-      "name": "Concept development",
-      "level": 4,
-      "parentId": "design-research",
-      "type": "technology"
-    },
-    "cad-modeling": {
-      "name": "CAD modeling",
-      "level": 3,
-      "parentId": "engineering-prototyping",
-      "type": "technology"
-    },
-    "prototype-testing": {
-      "name": "Prototype testing",
-      "level": 3,
-      "parentId": "engineering-prototyping",
-      "type": "technology"
     },
     "team-facilitation": {
       "name": "Team facilitation",
@@ -202,8 +173,8 @@
       "keywords": [
         "Singing",
         "Languages",
-        "cultures discovery",
-        "Drawing/painting",
+        "Cultures discovery",
+        "Drawing and painting",
         "Skating",
         "Tennis"
       ]
@@ -321,6 +292,10 @@
     "pohidex-robot-concept": {
       "name": "Pohidex - Robot for Healthy Fields",
       "description": "Agricultural robotics concept focused on healthier field maintenance.",
+      "image": "pohidex.png",
+      "notes": [
+        "De robot voor een gezond veld"
+      ],
       "roles": [
         "Concept developer",
         "Prototype contributor"
@@ -330,22 +305,30 @@
         "Agritech",
         "Sustainability",
         "Product design",
-        "Engineering"
+        "Engineering",
+        "hybrid-design-engineering",
+        "impact-and-sustainability",
+        "innovation-and-technology"
       ],
       "highlights": [
         {
-          "highlight": "Developed a concept at the intersection of product design and technical systems for agricultural contexts.",
-          "tags": [
-            "hybrid-design-engineering",
-            "impact-and-sustainability",
-            "innovation-and-technology"
-          ]
+          "highlight": "Developed a concept at the intersection of product design and technical systems for agricultural contexts."
+        },
+        {
+          "highlight": "Connected sustainability goals with implementable product directions."
+        },
+        {
+          "highlight": "Contributed to concept development and prototype-oriented thinking."
         }
       ]
     },
     "kneed-support-concept": {
       "name": "Kneed - Support When Needed",
       "description": "Support-oriented design concept aimed at improving daily assistance experiences.",
+      "image": "kneed.png",
+      "notes": [
+        "Ondersteuning wanneer je die nodig heb"
+      ],
       "roles": [
         "Designer",
         "User-centered concept developer"
@@ -358,11 +341,13 @@
       ],
       "highlights": [
         {
-          "highlight": "Designed an assistance concept informed by user needs and translated insights into concrete solution directions.",
-          "tags": [
-            "impact-and-sustainability",
-            "critical-and-experimental"
-          ]
+          "highlight": "Designed an assistance concept informed by user needs."
+        },
+        {
+          "highlight": "Converted user-centered insights into concrete solution directions."
+        },
+        {
+          "highlight": "Emphasized inclusivity, clarity of use, and practical relevance."
         }
       ]
     },
@@ -372,18 +357,22 @@
       "startDate": "2024-09-01",
       "roles": [
         "Mentor",
-        "Community contributor"
+        "Community contributor",
+        "collaboration-and-leadership",
+        "international-and-multicultural"
       ],
       "type": "volunteering",
       "entity": "TU Delft",
       "entityMarket": "Education",
       "highlights": [
         {
-          "highlight": "Contributed to 3 structured orientation initiatives (Girlsday, EJW, OWee), supporting transition into student life.",
-          "tags": [
-            "collaboration-and-leadership",
-            "international-and-multicultural"
-          ]
+          "highlight": "Contributed to 3 structured orientation initiatives (Girlsday, EJW, OWee), supporting student onboarding."
+        },
+        {
+          "highlight": "Supported open days and association activities to strengthen academic community engagement."
+        },
+        {
+          "highlight": "Demonstrated initiative, communication, and team coordination."
         }
       ]
     },
@@ -393,18 +382,22 @@
       "startDate": "2024-10-01",
       "endDate": "2025-03-01",
       "roles": [
-        "Tutor"
+        "Tutor",
+        "collaboration-and-leadership",
+        "critical-and-experimental"
       ],
       "type": "teaching",
       "entity": "SSL Leiden",
       "entityMarket": "Education",
       "highlights": [
         {
-          "highlight": "Applied trained tutoring methods to improve structure, confidence, and comprehension in one-to-one learning sessions.",
-          "tags": [
-            "collaboration-and-leadership",
-            "critical-and-experimental"
-          ]
+          "highlight": "Delivered one-to-one tutoring after completing a formal training programme."
+        },
+        {
+          "highlight": "Adapted explanations to different learner needs and followed student progression."
+        },
+        {
+          "highlight": "Improved structure, confidence, and comprehension in educational support sessions."
         }
       ]
     }

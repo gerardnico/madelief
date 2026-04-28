@@ -370,6 +370,7 @@ const projectEntry = z.object({
         .describe("Short summary of project. e.g. Collated works of 2017.")
         .optional(),
     highlights: highlights.optional(),
+    image: z.string().describe("An illustrative image").optional(),
     location: location.optional(),
     keywords: z
         .array(z.string().describe("e.g. AngularJS"))

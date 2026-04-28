@@ -39,12 +39,7 @@ Primary sources:
 - Collaboration with real communities -> Girlsday, EJW, OWee, TU Delft study association, SSL tutoring.
 - International and multicultural openness -> Multilingual profile (Dutch, English, French, Spanish) and collaboration in diverse student environments.
 
-## Education
-**Delft University of Technology (TU Delft), Delft**  
-Bachelor in Industrial Design Engineering (2024-present)
 
-**TU Delft Honours Programme**  
-Additional honours track (2025-present)
 
 ## Selected Projects
 ### TU Delft Industrial Design Foundation Projects | 2024-present
@@ -52,43 +47,3 @@ Additional honours track (2025-present)
 - Balanced desirability, feasibility, and implementation constraints during project development.
 - Applied design research, concept development, and iterative prototyping methods.
 
-### Pohidex - Robot for Healthy Fields
-- Developed an agritech concept at the intersection of product design and technical systems.
-- Connected sustainability goals with implementable product directions.
-- Contributed to concept development and prototype-oriented thinking.
-
-### Kneed - Support When Needed
-- Designed an assistance-focused concept informed by user needs and daily-use scenarios.
-- Converted user-centered insights into concrete solution directions.
-- Emphasized inclusivity, clarity of use, and practical relevance.
-
-### TU Delft Mentoring and Study Community | 2024-present
-- Contributed to 3 orientation initiatives (Girlsday, EJW, OWee) supporting student onboarding.
-- Supported open days and association activities to strengthen academic community engagement.
-- Demonstrated initiative, communication, and team coordination.
-
-### SSL Tutoring and Learning Support | 2024-2025
-- Delivered one-to-one tutoring after completing a formal training programme.
-- Adapted explanations to different learner needs and followed student progression.
-- Improved structure, confidence, and comprehension in educational support sessions.
-
-## Additional Experience
-- Albert Heijn - Store employee (2022-2024)
-- Tjoe Tjoe - Catering employee (2024)
-- Soldier of Orange - Theater employee (2025-present)
-
-## Skills
-- Design research and concept development
-- Engineering and prototyping (including CAD modeling and prototype testing)
-- Collaboration and project leadership
-- Sustainability and ethical decision-making
-- Cross-cultural communication
-
-## Languages
-- Dutch (Native)
-- English (Fluent)
-- French (Native)
-- Spanish (Working knowledge)
-
-## Interests
-Singing, languages, cultural discovery, drawing and painting, skating, tennis.
