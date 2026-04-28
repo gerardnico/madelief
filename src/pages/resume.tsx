@@ -3,13 +3,13 @@ import Image from "@combostrap/interact/components/Image";
 import resume from "../resources/resume/resume-data";
 import Grid from "@combostrap/interact/components/Grid";
 import GridCell from "@combostrap/interact/components/GridCell";
-import {Frontmatter} from "@combostrap/interact/types";
+import {Frontmatter, TocNode} from "@combostrap/interact/types";
 
 // noinspection JSUnusedGlobalSymbols
 export const frontmatter: Frontmatter = {
     layout: "holy-prose",
     title: "Resume",
-    hero: false
+    hero: "false"
 }
 
 const themeColor = "#00489C";
@@ -22,6 +22,9 @@ let educationId = "edu-id";
 let workId = "work-id";
 let skillId = "skill-id";
 let languagesInterestId = "lang-inter-id";
+
+
+// noinspection JSUnusedGlobalSymbols
 export const toc: TocNode[] = [
     {
         value: "Profile",
