@@ -439,7 +439,7 @@ const meta = z
 // --- Root Resume Schema ---
 
 export const resumeDataSchema = z
-    .looseObject({
+    .object({
         $schema: z
             .string()
             .describe("Link to the version of the schema that can validate the resume")

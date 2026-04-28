@@ -11,7 +11,8 @@
     "schema": "yarn tsx src/resources/resume/data/resume-schema-generation.ts"
   },
   "resolutions": {
-    "@combostrap/interact": "portal:../../combostrap/interact"
+    "@combostrap/interact": "portal:../../combostrap/interact",
+    "zod": "4.3.6"
   },
   "packageManager": "yarn@4.12.0",
   "devDependencies": {
